@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>background.png</file>
+        <file>punctuation.png</file>
+        <file>keyboard.png</file>
+        <file>setup.png</file>
+        <file>type.png</file>
+        <file>user.png</file>
+        <file>test.png</file>
+    </qresource>
+</RCC>

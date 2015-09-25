@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/new/prefix0">
+        <file>resource/fruit.jpg</file>
+        <file>resource/meat.jpg</file>
+        <file>resource/people.jpg</file>
+        <file>resource/special.jpg</file>
+        <file>resource/vegetable.jpg</file>
+        <file>resource/cai.jpg</file>
+        <file>resource/shuiguo.jpg</file>
+        <file>resource/rou.jpg</file>
+        <file>resource/tupian.jpg</file>
+        <file>resource/icecream.jpg</file>
+        <file>resource/beijingjpg.jpg</file>
+        <file>resource/maidou.jpg</file>
+    </qresource>
+</RCC>

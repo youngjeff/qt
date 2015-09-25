@@ -50,14 +50,14 @@ void MainWindow::on_pushButton_2_clicked()
         }
         if(temp == 1)
         {
-            //Widget *widGet;
-            //widGet = new Widget();
-            //widGet->show();
+            Widget *widGet;
+            widGet = new Widget();
+            widGet->show();
             //PrograssBar *PrograssBarMes ;
             //PrograssBarMes = new PrograssBar(this);
             //PrograssBarMes->show();
-            TimeMe *timeMe = new TimeMe();
-            timeMe->show();
+            //TimeMe *timeMe = new TimeMe();
+            //timeMe->show();
             this->close();
         }
 

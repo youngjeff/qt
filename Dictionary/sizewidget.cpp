@@ -35,7 +35,7 @@ void SizeWidget::on_sureButton_clicked()
     }
 
 
-    if(file.open(QIODevice::Append))
+    if(file.open(QIODevice::ReadWrite))
     {
           // QMessageBox::information(this,"care","无法注册");
            QTextStream textStream(&file);

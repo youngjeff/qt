@@ -15,15 +15,12 @@ TEMPLATE = app
 SOURCES += main.cpp\
         widget.cpp \
     mainwindow.cpp \
-    sizewidget.cpp \
-    timeme.cpp
+    sizewidget.cpp
 
 HEADERS  += widget.h \
     mainwindow.h \
-    sizewidget.h \
-    timeme.h
+    sizewidget.h
 
 FORMS    += widget.ui \
     mainwindow.ui \
-    sizewidget.ui \
-    timeme.ui
+    sizewidget.ui

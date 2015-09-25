@@ -1,0 +1,14 @@
+#ifndef JEFFPUSHBUTTON_GLOBAL_H
+#define JEFFPUSHBUTTON_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(JEFFPUSHBUTTON_LIBRARY)
+#  define JEFFPUSHBUTTONSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define JEFFPUSHBUTTONSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // JEFFPUSHBUTTON_GLOBAL_H
+
+#include <QPushButton>
