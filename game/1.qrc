@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>images/box.gif</file>
+        <file>images/myIcon.png</file>
+        <file>images/loginBnd.png</file>
+        <file>images/c.png</file>
+        <file>test.png</file>
+        <file>butterfly.gif</file>
+        <file>first.mp3</file>
+        <file>images/pause.png</file>
+        <file>end.mp3</file>
+        <file>folder.wav</file>
+        <file>images/myBackground.png</file>
+        <file>readygo.mp3</file>
+        <file>images/ready.png</file>
+        <file>images/go.png</file>
+        <file>play.mp3</file>
+        <file>flystar.wav</file>
+        <file>useitem.wav</file>
+        <file>PICKUP.WAV</file>
+        <file>newFlf.gif</file>
+        <file>splash.jpg</file>
+    </qresource>
+</RCC>
