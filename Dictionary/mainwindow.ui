@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background: lightblue;</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">
@@ -23,7 +26,11 @@
      </widget>
     </item>
     <item row="0" column="1" colspan="2">
-     <widget class="QLineEdit" name="usrLineEdit"/>
+     <widget class="QLineEdit" name="usrLineEdit">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(206, 232, 0);</string>
+      </property>
+     </widget>
     </item>
     <item row="1" column="0">
      <widget class="QLabel" name="label_2">
@@ -33,10 +40,17 @@
      </widget>
     </item>
     <item row="1" column="1" colspan="2">
-     <widget class="QLineEdit" name="passLineEdit"/>
+     <widget class="QLineEdit" name="passLineEdit">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(206, 232, 0);</string>
+      </property>
+     </widget>
     </item>
     <item row="2" column="0">
      <widget class="QPushButton" name="sizeUpButton">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(102, 255, 189);</string>
+      </property>
       <property name="text">
        <string>注册</string>
       </property>
@@ -44,6 +58,9 @@
     </item>
     <item row="2" column="1">
      <widget class="QPushButton" name="cancerButton">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(102, 255, 189);</string>
+      </property>
       <property name="text">
        <string>取消</string>
       </property>
@@ -51,6 +68,9 @@
     </item>
     <item row="2" column="2">
      <widget class="QPushButton" name="pushButton_2">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(102, 255, 189);</string>
+      </property>
       <property name="text">
        <string>登录</string>
       </property>

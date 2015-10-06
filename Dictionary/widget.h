@@ -3,7 +3,7 @@
 
 #include <QWidget>
 #include <QString>
-
+#include "review.h"
 namespace Ui {
 class Widget;
 }
@@ -22,6 +22,8 @@ public:
     };
      //Node nodes[10000];
     int valuess ;
+//    QString review[15];
+  static  Node nodess[15];
 private slots:
     void on_pushButton_clicked();
 
@@ -38,6 +40,8 @@ private slots:
 
 
     //void on_progressBar_valueChanged(int value);
+
+    void on_pushButton_2_clicked();
 
 private:
     Ui::Widget *ui;

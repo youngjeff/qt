@@ -15,11 +15,13 @@ TEMPLATE = app
 SOURCES += main.cpp\
         widget.cpp \
     mainwindow.cpp \
-    sizewidget.cpp
+    sizewidget.cpp \
+    review.cpp
 
 HEADERS  += widget.h \
     mainwindow.h \
-    sizewidget.h
+    sizewidget.h \
+    review.h
 
 FORMS    += widget.ui \
     mainwindow.ui \

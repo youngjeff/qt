@@ -14,48 +14,82 @@
    <string>Widget</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="0" column="0" colspan="3">
-    <widget class="QTextEdit" name="textEdit"/>
-   </item>
-   <item row="3" column="0">
-    <widget class="QPushButton" name="reviewButton">
-     <property name="text">
-      <string>复习</string>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="2">
-    <widget class="QPushButton" name="DownButton">
-     <property name="text">
-      <string>下一页</string>
-     </property>
-    </widget>
-   </item>
    <item row="2" column="0">
     <widget class="QPushButton" name="checkButton">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(102, 255, 189);
+
+</string>
+     </property>
      <property name="text">
-      <string>退出</string>
+      <string>保存进度</string>
      </property>
     </widget>
    </item>
-   <item row="2" column="2">
+   <item row="2" column="3">
     <widget class="QPushButton" name="UpButton">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(102, 255, 189);</string>
+     </property>
      <property name="text">
       <string>上一页</string>
      </property>
     </widget>
    </item>
-   <item row="3" column="1">
-    <widget class="QProgressBar" name="progressBar">
-     <property name="value">
-      <number>24</number>
+   <item row="2" column="2">
+    <widget class="QPushButton" name="pushButton">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(102, 255, 189);</string>
+     </property>
+     <property name="text">
+      <string>开始学习</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="4">
+    <widget class="QTextEdit" name="textEdit">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(0, 227, 255, 60);</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QPushButton" name="reviewButton">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(102, 255, 189);</string>
+     </property>
+     <property name="text">
+      <string>复习</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="3">
+    <widget class="QPushButton" name="DownButton">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(102, 255, 189);</string>
+     </property>
+     <property name="text">
+      <string>下一页</string>
      </property>
     </widget>
    </item>
    <item row="2" column="1">
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(102, 255, 189);</string>
+     </property>
      <property name="text">
-      <string>开始学习</string>
+      <string>恢复进度</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1" colspan="2">
+    <widget class="QProgressBar" name="progressBar">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(235, 0, 255, 93);</string>
+     </property>
+     <property name="value">
+      <number>24</number>
      </property>
     </widget>
    </item>

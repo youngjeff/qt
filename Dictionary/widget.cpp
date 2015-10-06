@@ -7,6 +7,7 @@
 #include <QIODevice>
 #include <QMessageBox>
 //QString Widget::nodes[10000] = NULL;
+
 Widget::Widget(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Widget)
@@ -17,8 +18,9 @@ Widget::Widget(QWidget *parent) :
     ui->progressBar->setRange(0,100);
     ui->progressBar->setValue(valuess);
     //connect(ui->UpButton,SIGNAL(clicked(bool),this,SLOT(prograss());
-}
 
+}
+Widget::Node Widget::nodess[15];
 Widget::~Widget()
 {
     delete ui;
@@ -49,6 +51,7 @@ void Widget::on_pushButton_clicked()
         }
         number += 15;
     }
+    inFile.close();
 
 }
 
@@ -84,8 +87,9 @@ void Widget::on_UpButton_clicked()
         number= number - 15;
         valuess--;
         //ui->progressBar->valueChanged(valuess);
-
+ inFile.close();
         ui->progressBar->setValue(valuess);
+
     }
 
 }
@@ -119,6 +123,7 @@ void Widget::on_DownButton_clicked()
                ui->textEdit->append(nodes[i].word+"          "+nodes[i].explain);
            }
         }
+         inFile.close();
         number= number + 15;
         valuess++;
        // ui->progressBar-
@@ -128,36 +133,98 @@ void Widget::on_DownButton_clicked()
     }
 
 
+
 }
 
 void Widget::on_reviewButton_clicked()
 {
-        Node nodes[10000];
-        // QString temp1, temp2;
+//        Node nodes[15];
+         QString temp1, temp2;
         //Widget::nodes[10000];
         int numbers = number;
-        ui->textEdit->clear();
+//        ui->textEdit->clear();
         int  j;
         QFile inFile("./data");
         QTextStream textstream(&inFile);
         if(inFile.open(QIODevice::ReadWrite))
         {
            //QTextStream textstream(&inFile);
-           for(j = 0;j < numbers; j++){
-               textstream>>nodes[j].word;
-               nodes[j].explain = textstream.readLine();
-               ui->textEdit->append(nodes[j].word+"          "+nodes[j].explain);
+            for(j = 0;j < numbers -15; j++){
+              textstream>>temp1;
+              temp2 = textstream.readLine();
+            }
+           for(j = 0;j < 15; j++){
+               textstream>>nodess[j].word;
+               nodess[j].explain = textstream.readLine();
+               ui->textEdit->append(nodess[j].word+"          "+nodess[j].explain);
            }
-
         }
-
+        Review *review = new Review;
+        review->show();
+        this->close();
 
 }
 
 void Widget::on_checkButton_clicked()
 {
-    close();
+    QFile outFile("./dic");
+    if(outFile.open(QFile::ReadWrite|QIODevice::Truncate))
+    {
+        QTextStream teststream(&outFile);
+
+        teststream << QString::number(number);
+    }
 }
 
 
 
+
+void Widget::on_pushButton_2_clicked()
+{
+    int numbers;
+    QString numString;
+    QFile outFile("./dic");
+    if(outFile.open(QIODevice::ReadWrite))
+    {
+        QTextStream outStream(&outFile);
+        outStream >> numString;
+    }
+    numbers = numString.toInt();
+
+
+    ui->textEdit->clear();
+
+    //ui->progressBar->setRange(0,6700);
+    //ui->progressBar->setValue(valuess);
+
+    Node nodes[15];
+    //Widget::nodes[10000];
+    QFile inFile("./data");
+   // QString sentens="好好学习,天天向上";
+    //ui->textEdit->setPlainText(sentens);
+    if(inFile.open(QIODevice::ReadWrite))
+    {
+
+        int i = 0, j;
+        QFile inFile("./data");
+        QTextStream textstream(&inFile);
+        QString temp1,temp2;
+        if(inFile.open(QIODevice::ReadWrite))
+        {
+           //QTextStream textstream(&inFile);
+           for(j = 0;j < numbers-15; j++){
+             textstream>>temp1;
+             temp2 = textstream.readLine();
+           }
+           for(i = 0;i < 15;i++)
+           {
+               textstream>>nodes[i].word;
+               nodes[i].explain = textstream.readLine();
+               ui->textEdit->append(nodes[i].word+"          "+nodes[i].explain);
+           }
+        }
+
+    }
+     ui->progressBar->setValue(valuess);
+
+}

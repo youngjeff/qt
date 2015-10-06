@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background: lightblue;</string>
+  </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
     <widget class="QLabel" name="userName">
@@ -22,7 +25,11 @@
     </widget>
    </item>
    <item row="0" column="1">
-    <widget class="QLineEdit" name="usrEdit"/>
+    <widget class="QLineEdit" name="usrEdit">
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(211, 255, 0)</string>
+     </property>
+    </widget>
    </item>
    <item row="1" column="0">
     <widget class="QLabel" name="passWord">
@@ -32,10 +39,18 @@
     </widget>
    </item>
    <item row="1" column="1">
-    <widget class="QLineEdit" name="passEdit"/>
+    <widget class="QLineEdit" name="passEdit">
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(211, 255, 0)
+</string>
+     </property>
+    </widget>
    </item>
    <item row="2" column="0" colspan="2">
     <widget class="QPushButton" name="sureButton">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(102, 255, 189);</string>
+     </property>
      <property name="text">
       <string>ok</string>
      </property>
