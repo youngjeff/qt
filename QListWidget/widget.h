@@ -2,7 +2,8 @@
 #define WIDGET_H
 
 #include <QWidget>
-
+#include <QLabel>
+#include <QListWidget>
 class Widget : public QWidget
 {
     Q_OBJECT
@@ -10,6 +11,8 @@ class Widget : public QWidget
 public:
     Widget(QWidget *parent = 0);
     ~Widget();
+    QLabel *label;
+    QListWidget *listWidget;
 };
 
 #endif // WIDGET_H

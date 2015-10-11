@@ -2,7 +2,9 @@
 #define WIDGET_H
 
 #include <QWidget>
-#include <QLabel>
+#include <QFileSystemModel>
+#include <QPushButton>
+#include <QTreeView>
 
 class Widget : public QWidget
 {
@@ -11,7 +13,10 @@ class Widget : public QWidget
 public:
     Widget(QWidget *parent = 0);
     ~Widget();
-    
+    QFileSystemModel *model;
+    QTreeView *treeView;
+    void mkdir();
+    void rm();
 };
 
 #endif // WIDGET_H
