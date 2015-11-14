@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>back.png</file>
+        <file>barrier.png</file>
+        <file>edge.png</file>
+        <file>hero_1.png</file>
+    </qresource>
+</RCC>
