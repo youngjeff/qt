@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Add</class>
+ <widget class="QWidget" name="Add">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="6" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="2">
+    <widget class="QPushButton" name="alspushButton">
+     <property name="text">
+      <string>分析</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0">
+    <widget class="QTextEdit" name="outTextEdit"/>
+   </item>
+   <item row="8" column="2">
+    <widget class="QPushButton" name="dataButton">
+     <property name="text">
+      <string>存入数据库</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="2">
+    <widget class="QPushButton" name="fileButton">
+     <property name="text">
+      <string>选择文件</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QPlainTextEdit" name="inTextEdit"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
